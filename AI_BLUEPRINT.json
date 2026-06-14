@@ -1,0 +1,38 @@
+{
+  "mode": "template",
+  "project_title": "Product Manual Assistant - Beginner Simple RAG",
+  "short_description": "Template-generated Beginner Simple RAG project. It is complete, runnable, tested, and can be upgraded with real AI provider keys.",
+  "architecture_notes": [
+    "Deterministic full-stack template used for reliability.",
+    "FastAPI backend and React frontend are generated before GitHub push.",
+    "RAG/vector/agent flow is implemented locally with ChromaDB-ready fallback code."
+  ],
+  "backend_modules": [
+    "main.py",
+    "schemas.py",
+    "db.py",
+    "services/text.py",
+    "services/vector_store.py",
+    "services/pipeline.py"
+  ],
+  "frontend_features": [
+    "question form",
+    "answer panel",
+    "sources",
+    "agent timeline",
+    "error state"
+  ],
+  "data_sources": [
+    "sample documents",
+    "sample CSV tool data"
+  ],
+  "testing_strategy": [
+    "pytest contract tests",
+    "pipeline test",
+    "tool test",
+    "full-stack file existence test"
+  ],
+  "model_provider": "gemini",
+  "model_name": "gemini-1.5-flash",
+  "fallback_reason": "AI generation failed for gemini/gemini-1.5-flash; template fallback used."
+}
